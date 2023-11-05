@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="/static/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@500&display=swap" />
+    <style>
+        .abc {
+            color: #351f65;
+          
+        }
+
+        .abcs {
+            color: #00b5e2;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="wepik-export-20231009091255pe5-parent">
+            <img class="wepik-export-20231009091255pe5-icon" alt="" src="static/wepik-export-20231009091255pe56 1.png">
+
+
+
+            <div class="mcure-parent1">
+                <b class="abc">
+                    m<span class="abcs">Cure</span>
+                </b>
+                <img class="group-child2" alt="" src="static/Vector 6.png">
+
+            </div>
+        </div>
+        <img class="ca1d-7049-4fc4-866b-7694f3f91c-icon1" alt="" src="1737ca1d-7049-4fc4-866b-7694f3f91cfc 1.png">
+
+        <div class="login-parent">
+            {% for message in messages %}
+
+                                <div class="alert alert-success">
+                                    <a class="close" href="#" data-dismiss="alert">×</a>
+
+                                    {{ message }}
+
+                                </div>
+                        {% endfor %}
+            <b class="login1">Login</b>
+            <div class="lorem-ipsum-dolor-container1">
+                <p class="lorem-ipsum-dolor1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="magna-viverra-volutpat1">Magna viverra volutpat ornare facilisi et.</p>
+            </div>
+            
+            <form action="log" method="POST">
+                {% csrf_token %}
+                <div class="label5">Email </div>
+                <div class="label6">Password</div>
+
+                <input type="email" name="email" id="" class="group-child3">
+                <input type="password" name="password" id="" class="group-child4">
+
+
+                <input type="checkbox" name="" id="" class="checkbox-base-icon">
+
+
+                <div class="remember-me">Remember me</div>
+                <div class="forget-password">Forget Password ?</div>
+                <div class="not-registered-container">
+                    <span>Not Registered ?</span>
+                    <span class="create-an-account"><a href="register.html">Create an account</a> </span>
+                </div>
+
+
+                <div class="link-about-us2" id="popuplinkAboutUs">
+                    <button class="login2">Login</button>
+                    <!-- <div class="login2">Login</div> -->
+                </div>
+            </form>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

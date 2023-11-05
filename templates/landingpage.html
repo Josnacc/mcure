@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="stylesheet" href="static/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@500&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <style>
+        header {
+            position: absolute;
+            z-index: 9;
+            transition: .4s;
+            width: 100%;
+            top: 0px;
+            right: 0px;
+            left: 0px;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 8px 360px 0px;
+            box-sizing: border-box;
+            font-size: 50.65px;
+        }
+
+        nav {
+            border-radius: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 20px 3px rgba(102, 109, 117, 0.1);
+            width: 1200px;
+            overflow: hidden;
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; */
+            max-width: 1200px;
+        }
+
+        /* .links {
+            display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+        } */
+
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            gap: 227px;
+        }
+
+
+
+        .testimonial-slider {
+            background-color: white;
+            /* padding: 2em 2em 3em; */
+        }
+
+        .testimonial-title {
+            color: #fff;
+        }
+
+        .testimonial-title h2 {
+            padding-left: 0.2em;
+        }
+
+        .card {
+            margin: 0 0.5em;
+            box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+            border: none;
+            height: 100%;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            opacity: 1;
+            position: absolute;
+            right: 1em;
+            top: 90%;
+            transform: translateY(-50%);
+        }
+
+        @media (min-width: 576px) {
+            .carousel-item {
+                margin-right: 0;
+                flex: 0 0 50%;
+                display: block;
+            }
+
+            .carousel-inner {
+                display: flex;
+                text-align: center;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .carousel-inner {
+                padding: 1em;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                opacity: 1;
+                position: absolute;
+                left: 1em;
+                top: 90%;
+                transform: translateY(-50%);
+            }
+
+            .carousel-control-next {
+                left: 5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="landing-page" style=" width: 100%;">
+        <div class="divgatsby-focus-wrapper">
+
+            <header>
+                <nav>
+                    <div class="menu">
+                        <div class="nav">
+                            <div class="mcure-group">
+                                <b class="mcure">
+                                    m<span class="cure">Cure</span>
+                                </b>
+                                <img class="group-child" alt="" src="static/Vector 6.png">
+
+                            </div>
+                        </div>
+                        <div class="float-end" style="display: flex;
+                        flex-wrap: nowrap;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 30px;    padding-left: 53%;">
+                            <a href="login" style="font-size: medium;font-weight: 800;">
+                                <img class="frame-icon" alt="" src="static/Frame.png">
+
+                                Sign in
+                            </a>
+                            <a href="register"
+                                style="font-size: medium;font-weight: 800;border-radius: 50px;background-color: #6240e8;display: flex;flex-direction: column;
+                                                align-items: flex-start;justify-content: flex-start;padding: 8px 20px;text-decoration: none;color: white;">
+                                Register Now</a> <img  alt="" src="static/ButtonsearchImg.png">
+                        </div>
+                        <!-- <div >
+                            
+                               
+
+                        </div> -->
+
+                    </div>
+
+
+
+
+
+
+                </nav>
+            </header>
+            <div class="main">
+
+                <div class="section">
+                    <div class="divherovideo-module-containe">
+                        <img class="hero-default-poster-3abce3d7b7-icon" alt="" src="static/banner.jpg">
+
+                        <div class="pseudo">
+                        </div>
+                    </div>
+                    <div class="divherovideo-module-content-">
+                        <div class="divherovideo-module-title-7">
+                            <div class="prioritizing-wellness-should-container">
+                                <p class="prioritizing-wellness-should">Prioritizing wellness should</p>
+                                <p class="prioritizing-wellness-should">remain accessible to all</p>
+                            </div>
+                        </div>
+                        <div class="divherovideo-module-cta-ce5">
+                            <div class="divcalltoaction-module-callt">
+                                <div class="link-get-care-now">
+                                    <div class="get-care-now">Get care now</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="divherovideo-module-controls">
+                        <div class="button">
+                            <img class="img-icon" alt="" src="Img.svg">
+
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="section1">
+                    <div class="article">
+                        <div class="p">
+                            <div class="for-your-physical-container">
+                                <span>For your </span>
+                                <span class="physical-health">physical health</span>
+                                <span>. For your</span>
+                                <span class="mental-health"> mental health</span>
+                                <span>. For</span>
+                            </div>
+                            <div class="for-your-physical-container">
+                                <span class="clinicians">clinicians</span>
+                                <span>. For</span>
+                                <span class="hospitals"> hospitals</span>
+                                <span>. For all of it in one place. For life.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="divcarousel">
+                    <div class="divscrollousel-module-scroll">
+                        <div class="divscrollousel-module-contai">
+                            <div class="link-anytime-anywhere-anyt">
+                                <div class="divsegmentitem-module-slidec">
+                                    <div class="divsegmentitem-module-slidec1">
+                                        <div class="divsegmentitem-module-slides">
+                                            <div class="individuals">Individuals</div>
+                                        </div>
+                                        <div class="divsegmentitem-module-slidet">
+                                            <div class="anytime-anywhere-anything-container">
+                                                <p class="prioritizing-wellness-should">Anytime, anywhere,</p>
+                                                <p class="prioritizing-wellness-should">anything care</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divsegmentitem-module-slidec2">
+                                        <div class="divsegmentitem-module-slidec3">
+                                            <div class="divsegmentitem-module-arrow-">
+                                                <img class="img-icon1" alt="" src="static/Img.png">
+
+                                            </div>
+                                            <div class="divsegmentitem-module-ctatex">
+                                                <div class="get-care-now">Get care now</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divsegmentitem-module-slidei">
+                                        <img class="home-v3-individualspng-icon" alt=""
+                                            src="static/home_v3_individuals.png">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="button1">
+                                <div class="divsegmentitem-module-slidec">
+                                    <div class="divsegmentitem-module-slidec5">
+                                        <div class="divsegmentitem-module-slides1">
+                                            <div class="individuals">Organizations</div>
+                                        </div>
+                                        <div class="divsegmentitem-module-slidet1">
+                                            <div class="from-hospital-to">From hospital to home</div>
+                                        </div>
+                                    </div>
+                                    <div class="divsegmentitem-module-slidec6">
+                                        <div class="divsegmentitem-module-slidec3">
+                                            <div class="divsegmentitem-module-arrow-">
+                                                <img class="img-icon1" alt="" src="static/Img.png">
+
+                                            </div>
+                                            <div class="divsegmentitem-module-ctatex">
+                                                <div class="divsegmentitem-module-ctatex2">
+                                                    <div class="get-care-now">Ways we help</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divsegmentitem-module-slidei">
+                                        <img class="home-v3-individualspng-icon" alt=""
+                                            src="static/home_v3_hospitals.png">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="link-quality-care-starts-her">
+                                <div class="divsegmentitem-module-slidec">
+                                    <div class="divsegmentitem-module-slidec5">
+                                        <div class="divsegmentitem-module-slides2">
+                                            <div class="individuals">Clinicians</div>
+                                        </div>
+                                        <div class="divsegmentitem-module-slidet2">
+                                            <div class="quality-care-starts">Quality care starts here</div>
+                                        </div>
+                                    </div>
+                                    <div class="divsegmentitem-module-slidec2">
+                                        <div class="divsegmentitem-module-slidec3">
+                                            <div class="divsegmentitem-module-arrow-">
+                                                <img class="img-icon1" alt="" src="static/Img.png">
+
+                                            </div>
+                                            <div class="divsegmentitem-module-ctatex">
+                                                <div class="get-care-now">Join the team</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="divsegmentitem-module-slidei">
+                                        <img class="home-v3-individualspng-icon" alt=""
+                                            src="static/home_v3_providers.png">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="section2">
+                    <div class="article1">
+                        <div class="divgenerictext-module-text-">
+                            <div class="heading-2">
+                                <div class="access-to-exceptional">Access to exceptional healthcare, no matter when or
+                                    where</div>
+                            </div>
+                            <div class="p1">
+                                <div class="it-all-began">It all began with a straightforward yet groundbreaking
+                                    concept: Universal access to top-tier healthcare across the globe, tailored to your
+                                    preferences. And yes, that includes you.</div>
+                            </div>
+                        </div>
+                        <div class="divcalltoaction-module-callt1">
+                            <div class="link-about-us">
+                                <div class="get-care-now"><a href="#" style="text-decoration: none;">About us</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="section3" style="padding: 20px;">
+                    <div class="link">
+                        <div class="component-1">
+                            <div class="divtiles-module-text-af147">
+                                <div class="div">#1</div>
+                                <div class="span">
+                                    <div class="p2">
+                                        <div class="most-recognized-virtual-container">
+                                            <p class="prioritizing-wellness-should">Most recognized virtual care</p>
+                                            <p class="prioritizing-wellness-should">brand*</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="divtiles-module-image-e8b02-icon" alt=""
+                                src="static/div.tiles-module--image--e8b02.png">
+
+                        </div>
+                    </div>
+                    <div class="divtiles-module-tile-7b21a">
+                        <img class="divtiles-module-image-e8b02-icon1" alt="" src="static/div.tiles-module--image--e8b02.png">
+
+                        <div class="button-play-the-video">
+                            <div class="divtiles-module-playicon-f9">
+                                <div class="span1">
+                                    <img class="img-icon4" alt="" src="static/Img.svg">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link1">
+                        <div class="link2">
+                            <div class="divtiles-module-tileinner-d">
+                                <div class="divtiles-module-text-af1471">
+                                    <div class="spantiles-module-highlight-">
+                                        <div class="div1">78%</div>
+                                    </div>
+                                    <div class="span">
+                                        <div class="p3">
+                                            <div class="most-recognized-virtual-container">
+                                                <p class="prioritizing-wellness-should">Maintain or improve their blood
+                                                </p>
+                                                <p class="prioritizing-wellness-should">pressure**</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link3">
+                        <div class="divtiles-module-tileinner-d">
+                            <div class="divtiles-module-text-af1471">
+                                <div class="spantiles-module-highlight-1">
+                                    <div class="div1">900,000</div>
+                                </div>
+                                <div class="span">
+                                    <div class="p4">
+                                        <div class="most-recognized-virtual-container">
+                                            <p class="prioritizing-wellness-should">People accessed care they</p>
+                                            <p class="prioritizing-wellness-should">wouldn't have otherwise*</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link4">
+                        <div class="divtiles-module-tileinner-d2">
+                            <div class="divtiles-module-text-af1473">
+                                <div class="spantiles-module-highlight-2">
+                                    <div class="million">
+                                        <p class="prioritizing-wellness-should">50</p>
+                                        <p class="prioritizing-wellness-should">Million</p>
+                                    </div>
+                                </div>
+                                <div class="span">
+                                    <div class="p6">
+                                        <div class="virtual-visits-completed">Virtual visits completed*</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="divtiles-module-image-e8b02-icon2" alt=""
+                                src="static/div.tiles-module--image--e8b02.png">
+
+                        </div>
+                    </div>
+                    <div class="divtiles-module-col2inner1-">
+                        <div class="divtiles-module-tile-7b21a1">
+                            <div class="divtiles-module-text-af1474">
+                                <div class="divimagebanner-module-appcta">
+                                    <div class="p7">
+                                        <div class="virtual-visits-completed">Founder of the first virtual care</div>
+                                    </div>
+                                </div>
+                                <div class="spantiles-module-highlight-3">
+                                    <div class="patient-safety-organization-container">
+                                        <p class="prioritizing-wellness-should">patient safety</p>
+                                        <p class="prioritizing-wellness-should">organization</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link5">
+                            <div class="divtiles-module-tileinner-d">
+                                <div class="divtiles-module-text-af1475">
+                                    <div class="spantiles-module-highlight-1">
+                                        <div class="million">+90%</div>
+                                    </div>
+                                    <div class="span">
+                                        <div class="p8">
+                                            <div class="virtual-visits-completed">Member satisfaction*</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divtiles-module-tile-7b21a2">
+                        <img class="divtiles-module-image-e8b02-icon1" alt="" src="static/div.tiles-module--image--e8b02.png">
+
+                        <div class="button-play-the-video1">
+                            <div class="divtiles-module-playicon-f9">
+                                <div class="span1">
+                                    <img class="img-icon4" alt="" src="static/Img.svg">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="link6">
+                        <div class="divtiles-module-tileinner-d4">
+                            <div class="divtiles-module-text-af1476">
+                                <div class="span8">
+                                    <div class="p9">
+                                        <div class="of-people-with">76% of people with depression</div>
+                                        <div class="feel-better">feel better</div>
+                                        <div class="after-their-third"> after their third</div>
+                                        <div class="visit-with-their">visit with their therapist*</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="divtiles-module-image-e8b02-icon4" alt=""
+                                src="static/div.tiles-moduleimage.png">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="section3">
+                    <div class="link7" style="background-image: url(./static/Link.png); background-repeat: no-repeat;">
+                        <div class="pseudo1">
+                        </div>
+                        <div class="divimagetile-module-title-9">
+                            <div class="youll-find-us-container">
+                                <p class="prioritizing-wellness-should">You'll find us in more than</p>
+                                <p class="prioritizing-wellness-should">600 U.S. hospitals too</p>
+                            </div>
+                        </div>
+                        <div class="divimagetile-module-cta-db2">
+                            <div class="divimagetile-module-arrow-8">
+                                <img class="img-icon1" alt="" src="static/Img1.png">
+
+                            </div>
+                            <div class="divimagetile-module-ctatext-">
+                                <div class="get-care-now">See how we help hospitals</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="divcarousel1">
+                    <div class="divscrollousel-module-scroll1">
+                        <div class="divscrollousel-module-contai1">
+
+                            <div class="testimonial-slider">
+                                <div id="carouselExampleControls" class="carousel carousel-dark">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="divscrollousel-module-headin">
+                                                    <div class="divscrollousel-module-headin1">
+                                                        <div class="heading-21">
+                                                            <div class="our">Our</div>
+                                                            <div class="expert">expert</div>
+                                                            <div class="doctors">doctors</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="carousel-control-prev" type="button"
+                                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Previous</span>
+                                                </button>
+                                                <button class="carousel-control-next" type="button"
+                                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="visually-hidden">Next</span>
+                                                </button>
+                                            </div>
+                                            <div class="col-md-8" style="padding-top: 10%;">
+                                                <div class="carousel-inner">
+                                                    {% for i in ex %}
+                                                    <div class="carousel-item active">
+                                                        <div class="card">
+                                                            <div class="img-wrapper"><img
+                                                                    src="{{i.img.url}}"
+                                                                    class="d-block w-100 h-10" alt="..."> </div>
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">{{i.name}}</h5>
+                                                                <h5 class="card-title">{{i.position}}</h5>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>{% endfor %}
+                                                    {% comment %} <div class="carousel-item">
+                                                        <div class="card">
+                                                            <div class="img-wrapper"><img
+                                                                    src="https://codingyaar.com/wp-content/uploads/headshot-2-scaled.jpg"
+                                                                    class="d-block w-100" alt="..."> </div>
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Card title 2</h5>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="card">
+                                                            <div class="img-wrapper"><img
+                                                                    src="https://codingyaar.com/wp-content/uploads/headshot-3-scaled.jpg"
+                                                                    class="d-block w-100" alt="..."> </div>
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Card title 3</h5>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="card">
+                                                            <div class="img-wrapper"><img
+                                                                    src="https://codingyaar.com/wp-content/uploads/headshot-4-scaled.jpg"
+                                                                    class="d-block w-100" alt="..."> </div>
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Card title 4</h5>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="card">
+                                                            <div class="img-wrapper"><img
+                                                                    src="https://codingyaar.com/wp-content/uploads/headshot-5-scaled.jpg"
+                                                                    class="d-block w-100" alt="..."> </div>
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Card title 5</h5>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <div class="card">
+                                                            <div class="img-wrapper"><img
+                                                                    src="https://codingyaar.com/wp-content/uploads/headshot-6-scaled.jpg"
+                                                                    class="d-block w-100" alt="..."> </div>
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">Card title 6</h5>
+
+                                                            </div>
+                                                        </div>
+                                                    </div> {% endcomment %}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="divscrollousel-module-discla">
+                            <div class="p10">
+                                <div class="the-testimonials-viewpoints">The testimonials, viewpoints, and declarations
+                                    reflect the individual encounters of those associated with Mcure Health. Results and
+                                    experiences can differ and are distinct for each individual. Testimonials are given
+                                    willingly and without compensation.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="divmarquee-module-marquee-4">
+                    <div class="divmarquee-module-heading-5">
+                        <div class="divmarquee-module-title-e32">
+                            <div class="youll-find-us-container">Recent awards</div>
+                        </div>
+                    </div>
+                    <div class="divmarquee-module-marqueecon">
+                        <div class="link8">
+                            <img class="awards-provider-rankingsjpg-icon" alt=""
+                                src="static/awards_provider-rankings.jpg.png">
+
+                        </div>
+                        <div class="link9">
+                            <img class="awards-medtech-2022png-icon" alt="" src="static/awards_medtech-2022.png">
+
+                        </div>
+                        <div class="link10">
+                            <img class="trustpilotjpg-icon" alt="" src="static/trustpilot.jpg.png">
+
+                        </div>
+                        <div class="link11">
+                            <img class="award-healthgradesjpg-icon" alt="" src="static/award_healthgrades.jpg.png">
+                        </div>
+                        <div class="link12">
+                            <img class="awards-srpng-icon" alt="" src="static/awards_sr.png.png">
+                        </div>
+                        <div class="link13">
+                            <img class="awards-mit-techpng-icon" alt="" src="static/awards_mit-tech.png.png">
+                        </div>
+                        <div class="link14">
+                            <img class="awards-ihccjpg-icon" alt="" src="static/awards_IHCC.jpg.png">
+                        </div>
+                       
+                        
+
+                    </div>
+                </div>
+                <div class="section4" style="background-image: url(static/Section.png);">
+                    <div class="article5">
+                        <div class="divimagebanner-module-left-">
+                            <div class="divimagebanner-module-title-">
+                                <div class="this-is-whole-person">This is whole-person care.</div>
+                            </div>
+                            <div class="divimagebanner-module-cta-d">
+                                <div class="divcalltoaction-module-callt2">
+                                    <div class="link-get-started">
+                                        <div class="get-care-now"><a href="#"
+                                                style="text-decoration: none;color: white;">Get started</a></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divdisclaimer">
+                </div>
+            </div>
+
+
+
+            <div class="footer">
+                <div class="divsitefooter-module-contain">
+                    <div class="section5">
+                        <div class="divsitefooterprimary-module-">
+                            <div class="divsitefooterprimary-module-1">
+                                <div class="mcure-parent">
+                                    <b class="mcure">
+                                        m<span class="cure">Cure</span>
+                                    </b>
+                                    <img class="group-child" alt="" src="static/Vector 6.png">
+
+                                </div>
+                                <div class="divsitefooterprimary-module-2">
+                                    <div class="divimagebanner-module-appcta">
+                                        <div class="list">
+                                            <div class="item">
+                                                <img class="link-linkedin-img" alt="" src="static/LinkedIn.png">
+
+                                            </div>
+                                            <div class="item">
+                                                <img class="link-facebook-img" alt="" src="static/Facebook.png">
+
+                                            </div>
+                                            <div class="item">
+                                                <img class="link-facebook-img" alt="" src="static/Twitter.png">
+
+                                            </div>
+                                            <div class="item">
+                                                <img class="link-instagram-img" alt="" src="static/Instagram.png">
+
+                                            </div>
+                                            <div class="item">
+                                                <img class="link-youtube-img" alt="" src="static/Youtube.png">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="divimagebanner-module-appcta">
+                                    <div class="div4">
+                                        <div class="get-care-now">Headquarters</div>
+                                    </div>
+                                    <div class="p11">
+                                        <div class="mcure-health-inc">Mcure Health, Inc.</div>
+                                    </div>
+                                    <div class="p7">
+                                        <div class="mcure-health-inc">2 Manhattanville Road</div>
+                                    </div>
+                                    <div class="p13">
+                                        <div class="mcure-health-inc">Purchase, NY 10577</div>
+                                    </div>
+                                </div>
+                                <div class="divsitefooterprimary-module-5">
+                                    <div class="p14">
+                                        <div class="empowering-all-people-container">
+                                            <p class="prioritizing-wellness-should">Empowering all people</p>
+                                            <p class="prioritizing-wellness-should">everywhere to live their healthiest
+                                            </p>
+                                            <p class="prioritizing-wellness-should">lives by transforming the</p>
+                                            <p class="prioritizing-wellness-should">healthcare experience</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divsitefooterprimary-module-6">
+                            <div class="section6">
+                                <div class="divgenerictext-module-text-">
+                                    <div class="divsitefootermenusection-modu">
+                                        <div class="get-care-now">For Individuals</div>
+                                    </div>
+                                    <div class="list1">
+                                        <div class="item5">
+                                            <div class="get-care-now">Primary Care</div>
+                                        </div>
+                                        <div class="get-care-now">Mental Health</div>
+                                        <div class="get-care-now">Condition Management</div>
+                                        <div class="get-care-now">Specialty & Wellness</div>
+                                        <div class="get-care-now">How we Care for Adults</div>
+                                        <div class="get-care-now">How we Care for Children</div>
+                                        <div class="get-care-now">How we Care for Seniors</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section7">
+                                <div class="divgenerictext-module-text-">
+                                    <div class="divsitefootermenusection-modu1">
+                                        <div class="get-care-now">For Organizations</div>
+                                    </div>
+                                    <div class="list2">
+                                        <div class="item6">
+                                            <div class="get-care-now">Whole-Person Care</div>
+                                        </div>
+                                        <div class="item-link6">Employers</div>
+                                        <div class="item-link7">Health Plans</div>
+                                        <div class="item-link8">Hospitals & Health Systems</div>
+                                        <div class="item-link9">
+                                            <div class="resource-center">Resource Center</div>
+                                            <img class="img-icon7" alt="" src="static/footer_Img.png">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section8">
+                                <div class="divgenerictext-module-text-">
+                                    <div class="divsitefootermenusection-modu2">
+                                        <div class="get-care-now">For Providers</div>
+                                    </div>
+                                    <div class="list3">
+                                        <div class="item7">
+                                            <div class="get-care-now">Commitment to Quality</div>
+                                        </div>
+                                        <div class="item-link10">Clinical Leadership</div>
+                                        <div class="item-link11">
+                                            <div class="resource-center">Provider Careers</div>
+                                            <img class="img-icon8" alt="" src="static/footer_Img.png">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section9">
+                                <div class="divgenerictext-module-text-">
+                                    <div class="divsitefootermenusection-modu3">
+                                        <div class="get-care-now">Who we are</div>
+                                    </div>
+                                    <div class="list4">
+                                        <div class="item8">
+                                            <div class="get-care-now">About us</div>
+                                        </div>
+                                        <div class="item-link6">Leadership</div>
+                                        <div class="item-link13">
+                                            <div class="resource-center">CSR</div>
+                                            <img class="img-icon9" alt="" src="static/footer_Img.png">
+
+                                        </div>
+                                        <div class="item-link14">Community Guidelines</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section9">
+                                <div class="divgenerictext-module-text-">
+                                    <div class="divsitefootermenusection-modu4">
+                                        <div class="get-care-now">Company</div>
+                                    </div>
+                                    <div class="list5">
+                                        <div class="item9">
+                                            <div class="get-care-now">Careers</div>
+                                        </div>
+                                        <div class="item-link15">
+                                            <div class="resource-center">Industry Events</div>
+                                            <img class="img-icon10" alt="" src="static/footer_Img.png">
+
+                                        </div>
+                                        <div class="item-link16">
+                                            <div class="resource-center">Newsroom</div>
+                                            <img class="img-icon11" alt="" src="static/footer_Img.png">
+
+                                        </div>
+                                        <div class="item-link17">
+                                            <div class="resource-center">Investors</div>
+                                            <img class="img-icon12" alt="" src="static/footer_Img.png">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section11">
+                                <div class="divgenerictext-module-text-">
+                                    <div class="divsitefootermenusection-modu5">
+                                        <div class="get-care-now">Resources</div>
+                                    </div>
+                                    <div class="list6">
+                                        <div class="item10">
+                                            <div class="get-care-now">Contact Us</div>
+                                        </div>
+                                        <div class="item-link18">
+                                            <div class="resource-center">Blog</div>
+                                            <img class="img-icon13" alt="" src="static/footer_Img.png">
+
+                                        </div>
+                                        <div class="item-link19">
+                                            <div class="faqs">FAQs</div>
+                                            <img class="img-icon14" alt="" src="static/footer_Img.png">
+
+                                        </div>
+                                        <div class="item-link20">Notice of Privacy Practices</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section12">
+                        <div class="divsitefootersecondary-module">
+                            <div class="list7">
+                                <div class="item11">
+                                    <div class="link-web">© mCure Health, Inc.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divsitefootersecondary-module1">
+                            <div class="link19">
+                                <img class="app-store-badgepng-icon1" alt="" src="static/app-store-badge.png">
+
+                            </div>
+                            <div class="link20">
+                                <img class="google-play-badgepng-icon1" alt="" src="static/google-play-badge.png">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section13">
+                        <div class="divsitefooterlegal-module-le">
+                            <div class="list8">
+                                <div class="item12">
+                                    <div class="link-web">Web and Mobile Privacy Policy</div>
+                                </div>
+                                <div class="item13">
+                                    <div class="link-web">Legal Disclaimer</div>
+                                </div>
+                                <div class="item14">
+                                    <div class="link-web">Notice of Non-Discrimination and Accessibility Requirements
+                                    </div>
+                                </div>
+                                <div class="item15">
+                                    <div class="link-web">Compliance and Ethics Hotline</div>
+                                </div>
+                                <div class="item16">
+                                    <div class="link-web">Accessibility Statement</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
+
+
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script>
+        var multipleCardCarousel = document.querySelector("#carouselExampleControls");
+
+        if (window.matchMedia("(min-width: 576px)").matches) {
+            var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+                interval: false
+            });
+            var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+            var cardWidth = $(".carousel-item").width();
+            var scrollPosition = 0;
+            $("#carouselExampleControls .carousel-control-next").on("click", function () {
+                if (scrollPosition < carouselWidth - cardWidth * 3) {
+                    scrollPosition += cardWidth;
+                    $("#carouselExampleControls .carousel-inner").animate(
+                        { scrollLeft: scrollPosition },
+                        600
+                    );
+                }
+            });
+            $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+                if (scrollPosition > 0) {
+                    scrollPosition -= cardWidth;
+                    $("#carouselExampleControls .carousel-inner").animate(
+                        { scrollLeft: scrollPosition },
+                        600
+                    );
+                }
+            });
+        } else {
+            $(multipleCardCarousel).addClass("slide");
+        }
+
+    </script>
+</body>
+
+</html>

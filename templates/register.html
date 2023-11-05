@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="/static/index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Sans:wght@500&display=swap" />
+
+
+
+</head>
+
+<body>
+
+    <div class="register">
+        <b class="register1">Register</b>
+        <div class="lorem-ipsum-dolor-container">
+            <p class="lorem-ipsum-dolor">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p class="magna-viverra-volutpat">Magna viverra volutpat ornare facilisi et.</p>
+        </div>
+
+        <form action="register" method="POST">
+            {% csrf_token %}
+            <div class="label">Full name</div>
+            <input type="text" name="fullname" id="" class="register-child" placeholder="Your full name">
+            <div class="label1">Email address</div>
+            <input type="email" name="email" id="" class="register-item" placeholder="Your email address">
+            <div class="label4">Phone number</div>
+            <input type="tel" name="phone" id="" class="register-child1" placeholder="Your phone number">
+            <div class="label3">Pharma company</div>
+            <select name="company" id="" class="rectangle-div">
+                <option value="">Choose company</option>
+                <option value="">1</option>
+                <option value="">2</option>
+            </select>
+            <div class="label2">Brand</div>
+            <select name="brand" id="" class="register-inner">
+                <option value="">Choose brand</option>
+                <option value="">1</option>
+                <option value="">2</option>
+            </select>
+           
+           
+            <div class="already-have-an-container">
+                <span>Already have an account ?</span>
+                <span class="log-in"><a href="login"> Log In</a></span>
+            </div>
+            <div class="link-about-us1">
+                <div ><button class="create-my-account">Create my account</button></div>
+            </div>
+
+        </form>
+
+        
+
+        <div class="i-accept-lorem">I accept, lorem ipsum dolor sit amet, consectetur adipiscing elit. Elit ornare
+            faucibus varius massa arcu consectetur turpis bibendum diam. </div>
+       
+        
+        <div class="aa0dd710d59f69addf9c35baedbd81">
+        </div>
+        <img class="ca1d-7049-4fc4-866b-7694f3f91c-icon" alt="" src="1737ca1d-7049-4fc4-866b-7694f3f91cfc 1.png">
+
+
+        <div class="frame-div">
+            <div class="aa0dd710d59f69addf9c35baedbd81-parent">
+                <div class="aa0dd710d59f69addf9c35baedbd811">
+                </div>
+                <div class="group-div">
+                    <b class="mcure2">
+                        m<span class="cure2">Cure</span>
+                    </b>
+
+
+                </div>
+                <div class="adas-1-parent">
+                    <img class="adas-1-icon" alt="" src="static/adas 1.png">
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="adas-1-parent">
+            <img class="adas-1-icon" alt="" src="static/adas 1.png">
+
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
